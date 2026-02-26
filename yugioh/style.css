@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #111;
+    color: #fff;
+}
+
+header {
+    background: #222;
+    padding: 20px;
+    text-align: center;
+}
+
+.search-container {
+    margin-top: 10px;
+}
+
+.search-container input {
+    padding: 8px;
+    width: 250px;
+    font-size: 16px;
+}
+
+.search-container button {
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cards-container {
+    display: grid;
+    gap: 12px;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+}
+
+.card {
+    background: #222;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.card h3 {
+    margin-top: 8px;
+    font-size: 14px;
+}

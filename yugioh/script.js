@@ -14,14 +14,14 @@ async function fetchCards(name = "") {
     const data = await response.json();
 
     if (!data.data) {
-      cardsContainer.innerHTML = "<p>Nenhuma carta encontrada.</p>";
+      cardsContainer.innerHTML = "<p>No letters found</p>";
       return;
     }
 
     showCards(data.data);
   } catch (err) {
     console.error("Erro ao buscar cartas:", err);
-    cardsContainer.innerHTML = "<p>Erro ao carregar cartas.</p>";
+    cardsContainer.innerHTML = "<p>Error loading cards.</p>";
   }
 }
 
@@ -44,5 +44,4 @@ searchBtn.addEventListener("click", () => {
   fetchCards(name);
 });
 
-// Busca inicial
 fetchCards();
